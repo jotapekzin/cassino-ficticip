@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictício Cassino - Double Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fictício Cassino - Jogo de Double</h1>
+        <p>Saldo Atual: <span id="balance">1000</span> Cpcoins</p>
+
+        <div class="bet-section">
+            <label for="betAmount">Quantidade da Aposta (Cpcoins):</label>
+            <input type="number" id="betAmount" placeholder="Digite a aposta" />
+
+            <div class="colors">
+                <button onclick="placeBet('red')" class="red">Vermelho (x2)</button>
+                <button onclick="placeBet('black')" class="black">Preto (x2)</button>
+                <button onclick="placeBet('white')" class="white">Branco (x14)</button>
+            </div>
+
+            <button onclick="roll()">Girar Roleta</button>
+        </div>
+
+        <div class="result">
+            <p>Resultado: <span id="result">---</span></p>
+            <p>Histórico: <span id="history">Nenhum jogo ainda</
